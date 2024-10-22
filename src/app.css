@@ -1,3 +1,32 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@import '@fontsource-variable/inter';
+
+body {
+	font-family: 'Inter Variable', sans-serif;
+}
+
+.stack-overlap {
+	display: inline-grid;
+	place-items: center;
+	align-items: flex-end;
+}
+
+.stack-overlap > img {
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+
+.stack-overlap > *:nth-child(1) {
+	transform: translateY(15%);
+	z-index: 3;
+	opacity: 1;
+}
+
+.stack-overlap > *:nth-child(2) {
+	transform: translateX(-8%);
+	z-index: 2;
+	opacity: 1;
+}
