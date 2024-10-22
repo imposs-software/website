@@ -21,6 +21,9 @@
 	const navigation: { title: string; path: string }[] = [{ title: 'thisjt.me', path: 'https://thisjt.me/' }];
 </script>
 
+<svelte:head>
+	<title>Inventory Management and POS System - Showcase</title>
+</svelte:head>
 <header>
 	<nav class="relative mx-auto max-w-screen-xl items-center px-4 pt-5 sm:flex sm:space-x-6 sm:px-8">
 		<div class="flex justify-between gap-2">
