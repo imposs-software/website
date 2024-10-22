@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import Contact from './Contact.svelte';
+	import Feature2 from './Feature2.svelte';
+	import Feature1 from './Feature1.svelte';
+	import Hero from './Hero.svelte';
+</script>
+
+<Hero />
+<Feature1 />
+<Feature2 />
+<Contact />
