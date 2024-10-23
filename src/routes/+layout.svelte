@@ -7,18 +7,33 @@
 
 	const darkmode = writable(false);
 
+	function switchModes(darkmode: boolean) {
+		if (darkmode) {
+			document.body.dataset.theme = 'impossdark';
+			document.cookie = 'darkmode=true; path=/; max-age=31536000;';
+		} else {
+			document.body.dataset.theme = 'imposslight';
+			document.cookie = 'darkmode=true; path=/; max-age=0;';
+		}
+	}
+
 	onMount(() => {
-		if (data.darkmode) document.documentElement.dataset.theme = 'impossdark';
-		else document.documentElement.dataset.theme = 'imposslight';
+		switchModes(data.darkmode);
+		$darkmode = data.darkmode;
 
 		const u = darkmode.subscribe((dmode) => {
-			if (dmode) document.documentElement.dataset.theme = 'impossdark';
-			else document.documentElement.dataset.theme = 'imposslight';
+			switchModes(dmode);
 		});
 		return () => u;
 	});
 
-	const navigation: { title: string; path: string }[] = [{ title: 'thisjt.me', path: 'https://thisjt.me/' }];
+	const navigation: { title: string; path: string }[] = [
+		{ title: 'Home', path: '/' },
+		{
+			title: 'Request a Demo',
+			path: 'mailto:contact@thisjt.me',
+		},
+	];
 </script>
 
 <svelte:head>
@@ -33,7 +48,7 @@
 			<div class="z-20 mr-4 flex w-64 flex-1 items-center justify-end p-4 text-right">
 				<ul class="order-1 items-center justify-end space-y-5 sm:flex sm:space-x-6 sm:space-y-0">
 					{#each navigation as item}
-						<li class="font-bold text-accent transition hover:text-gray-400 hover:underline">
+						<li class="font-bold text-primary transition hover:text-gray-400 hover:underline">
 							<a target={item.path.startsWith('http') ? '_blank' : null} href={item.path}>{item.title}</a>
 						</li>
 					{/each}
@@ -41,7 +56,7 @@
 			</div>
 			<div class="mr-4 flex items-center sm:mr-0">
 				<label class="swap swap-rotate text-3xl">
-					<input type="checkbox" on:change={() => ($darkmode = !$darkmode)} />
+					<input type="checkbox" checked={data.darkmode} on:change={() => ($darkmode = !$darkmode)} />
 					<span class="swap-off icon-[tabler--sun]"></span>
 					<span class="swap-on icon-[tabler--moon-stars]"></span>
 				</label>

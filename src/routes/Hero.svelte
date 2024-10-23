@@ -16,7 +16,7 @@
 			</form>
 		</div>
 	</div>
-	<div class="mt-4 flex-1 border bg-base-300 text-center lg:ml-3 lg:mt-0">
+	<div class="mt-4 flex-1 bg-base-300 text-center lg:ml-3 lg:mt-0">
 		<img src="/screenshots/1.png" alt="" />
 	</div>
 </section>
