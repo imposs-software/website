@@ -7,9 +7,9 @@
 	];
 </script>
 
-<section class="pb-24 pt-14">
+<section class="lg:pb-24 lg:pt-14">
 	<div class="mx-auto max-w-screen-xl justify-between gap-16 px-4 md:px-8 lg:flex">
-		<div class="stack-overlap mt-12 w-full lg:mt-0 lg:w-2/3">
+		<div class="stack-overlap mb-20 mt-12 w-full lg:mb-0 lg:mt-0 lg:w-2/3">
 			<img class="w-full" src="/screenshots/2.png" alt="" />
 			<img class="w-full" src="/screenshots/3.png" alt="" />
 		</div>
@@ -39,7 +39,7 @@
 	</div>
 </section>
 
-<section class="py-14">
+<section class="md:py-14">
 	<div class="mx-auto max-w-screen-xl px-4 text-gray-600 md:px-8">
 		<div class="mx-auto max-w-3xl text-center">
 			<h3 class="text-3xl font-semibold text-primary sm:text-4xl">Proven and battle-tested</h3>

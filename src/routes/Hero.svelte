@@ -1,4 +1,4 @@
-<section class="mx-auto mt-24 max-w-screen-xl items-center px-4 pb-20 md:px-8 lg:flex">
+<section class="mx-auto mt-24 max-w-screen-xl items-center px-4 md:px-8 md:pb-20 lg:flex">
 	<div class="flex-1 space-y-4 sm:text-center lg:text-left">
 		<h1 class="flex flex-col gap-3 text-4xl font-bold xl:text-5xl">
 			<div class="text-primary">Inventory Management.</div>
