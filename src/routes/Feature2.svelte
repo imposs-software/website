@@ -40,6 +40,11 @@
 			title: 'Offline Support',
 			description: 'Offline-first system structure for uninterrupted business operations.',
 		},
+		{
+			icon: 'icon-[tabler--shield-lock]',
+			title: 'Secured Edge Database',
+			description: 'Database is fully encrypted and is unusable in case of a data breach.',
+		},
 	];
 </script>
 

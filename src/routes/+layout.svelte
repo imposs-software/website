@@ -64,7 +64,9 @@
 	</nav>
 	<aside>
 		<p>
-			Copyright © {new Date().getFullYear()} Inventory Management and Point-of-Sales System - Made with <span class="icon-[tabler--heart-spark]"></span> by
+			Copyright © {new Date().getFullYear()} <a href="https://github.com/imposs-software" target="_blank">IMPOSS Software</a> - Made with
+			<span class="icon-[tabler--heart-spark]"></span>
+			by
 			<a href="https://thisjt.me" target="_blank">thisjt.me</a>
 		</p>
 	</aside>
